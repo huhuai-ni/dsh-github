@@ -1,0 +1,7 @@
+# dsh-github 的 bundle patch：装进 profile 后，只要把 `dsh-github` 加进
+# package.json 的 dsh.profile.bundles，这条就会自动生效。
+# 注意：本插件没有导出 Config（不需要设置页），所以这里不给 config 字段，
+# 免得 loader 因为「没有 schema 却给了配置」而跳过激活。
+- insert:
+    - id: github-manager
+      name: dsh-github
