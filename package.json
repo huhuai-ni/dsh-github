@@ -1,0 +1,37 @@
+{
+  "name": "dsh-github",
+  "version": "0.1.0",
+  "description": "DSH 插件：直接管理你的 GitHub 账号 —— 仓库、issue、PR、通知、Actions、star",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "github"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "author": "huhuai-ni",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huhuai-ni/dsh-github.git"
+  },
+  "homepage": "https://github.com/huhuai-ni/dsh-github#readme",
+  "bugs": {
+    "url": "https://github.com/huhuai-ni/dsh-github/issues"
+  }
+}
